@@ -1,106 +1,236 @@
- # 🚀 GigSure AI  
-### AI-Powered Parametric Insurance for Gig Workers  
-**DEVTrails 2026 – Phase 1 Submission**
+# 🚀 FlexiCover AI
+
+### Adaptive Income Protection for Gig Workers
 
 ---
 
 ## 📌 Problem Statement
 
-India’s gig economy workers (Zomato, Swiggy, Amazon, Zepto, etc.) face **frequent income loss** due to:
+India’s gig workers (Swiggy, Zomato, etc.) face **income loss due to external disruptions** like rain, heatwaves, pollution, or curfews.
 
-- 🌧 Heavy rain / floods  
-- 🌡 Extreme heat  
-- 🌫 Air pollution  
-- 🚧 Curfews / strikes  
+Current systems:
 
-These disruptions reduce working hours, causing **20–30% income loss**, with **no existing financial protection system**.
-
-👉 Our solution focuses strictly on **income protection**, excluding health, life, or vehicle insurance.
+* Do NOT protect daily earnings
+* Provide NO real-time compensation
+* Are NOT designed for gig-based work patterns
 
 ---
 
-## 💡 Solution Overview
+## 💡 Our Solution: FlexiCover AI
 
-### 🛡 Product Name: **GigSure AI**
+**FlexiCover AI** is an AI-powered parametric insurance platform that protects gig workers by:
 
-GigSure AI is an **AI-powered parametric insurance platform** that:
+* Predicting **expected earnings**
+* Detecting **real-world disruptions**
+* Automatically triggering **instant payouts**
 
-- Detects real-world disruptions automatically  
-- Calculates income loss using AI  
-- Triggers claims without user action  
-- Provides **instant payouts**  
-- Uses a **weekly subscription model**
+👉 Unlike traditional solutions, we insure **lost earning opportunities**, not just events.
 
 ---
 
-## 👤 Target Persona
+## 🎯 Target Persona
 
-### Food Delivery Partner (Swiggy/Zomato)
+**Food Delivery Partner (Swiggy/Zomato)**
 
-- **Name:** Ravi  
-- **Age:** 26  
-- **Daily Earnings:** ₹800  
-- **Weekly Earnings:** ₹5000  
-
----
-
-## 🔄 Application Workflow
-
-1. User Registration  
-2. AI Risk Profiling  
-3. Policy Creation  
-4. Real-Time Monitoring  
-5. Parametric Trigger Activation  
-6. AI Claim Processing  
-7. Instant Payout  
+* Works 6–10 hours/day
+* Earns ₹500–₹1200/day
+* Highly affected by weather & local disruptions
 
 ---
 
-## 💰 Weekly Premium Model
+## 🔥 Key Innovation
 
-Weekly Premium = (Risk Score × Coverage Amount) / 100
+### 1. Intent-Based Insurance
 
----
+* Detects whether a worker was **likely to be working** during disruption
+* Uses:
 
-## ⚡ Parametric Triggers
+  * Historical working hours
+  * Location patterns
+  * Activity trends
 
-- Rainfall > 50mm  
-- Temp > 40°C  
-- AQI > 300  
-- Curfew  
-
----
-
-## 🤖 AI/ML Integration
-
-- Risk Prediction  
-- Income Loss Prediction  
-- Fraud Detection  
+✅ Prevents false payouts
+✅ Improves accuracy
 
 ---
 
-## 🧾 Zero-Touch Claims
+### 2. AI Earnings Prediction
 
-Fully automated claim process without manual input.
+* Predicts **expected daily income** using ML
+* Payout is based on **predicted earnings**, not fixed values
+
+Example:
+
+* Predicted income = ₹800
+* Rain stops work for 50% time
+  👉 Payout = ₹400
 
 ---
 
-## 💸 Payout System
+### 3. Dynamic Coverage Switching
 
-- UPI (Mock)  
-- Instant payout  
+* Coverage adjusts based on:
+
+  * Work frequency
+  * Risk level
+  * Day of week
+
+Example:
+
+* Weekend → higher coverage
+* Weekday → lower coverage
+
+---
+
+### 4. Micro Time-Based Insurance
+
+* Protection at **hour-level granularity**
+
+Example:
+
+* Covered: 4 PM – 10 PM
+* Rain at 6 PM
+  👉 Only 4 hours compensated
+
+---
+
+### 5. Intelligent Fraud Detection
+
+* GPS validation
+* Behavioral anomaly detection
+* Duplicate claim prevention
+
+Example:
+
+* Claim without matching weather data → rejected
+
+---
+
+## ⚙️ System Workflow
+
+1. **User Registration**
+
+   * Phone number, location, income details
+
+2. **AI Risk Profiling**
+
+   * Analyze weather & area risk
+   * Learn user work patterns
+
+3. **Policy Creation**
+
+   * Weekly premium calculated dynamically
+
+4. **Real-Time Monitoring**
+
+   * Track weather, pollution, and disruptions
+
+5. **Trigger Detection**
+
+   * AI checks:
+
+     * Disruption occurred
+     * User likely working
+
+6. **Automatic Payout**
+
+   * Instant compensation via payment gateway
+
+---
+
+## 💸 Weekly Pricing Model
+
+Dynamic pricing based on risk and behavior:
+
+```
+Weekly Premium = Base Price + (Work Frequency × Risk Score)
+```
+
+Example:
+
+* Base = ₹20
+* High risk + frequent worker = ₹60/week
+
+---
+
+## 🧠 AI/ML Integration
+
+### Models Used:
+
+* Regression model → Earnings prediction
+* Time-series analysis → Work pattern detection
+* Rule-based AI → Trigger validation
+
+---
+
+## 🔌 Integrations
+
+* Weather API (OpenWeather / Mock API)
+* Location tracking (GPS)
+* Payment gateway (Razorpay Test Mode / UPI Mock)
+* Platform simulation (delivery activity data)
+
+---
+
+## 📊 Dashboard Features
+
+### 👷 Worker Dashboard:
+
+* Active coverage
+* Earnings protected
+* Recent payouts
+
+### 🏢 Admin Dashboard:
+
+* Risk zones
+* Claims analytics
+* Loss ratio insights
 
 ---
 
 ## 🛠 Tech Stack
 
-- Frontend: Flutter  
-- Backend: Node.js  
-- Database: PostgreSQL  
-- AI/ML: Python  
+| Layer    | Technology            |
+| -------- | --------------------- |
+| Frontend | React / Flutter       |
+| Backend  | Node.js / Flask       |
+| AI/ML    | Python (Scikit-learn) |
+| Database | MongoDB / Firebase    |
+| APIs     | Weather + Maps        |
+| Payments | Razorpay (Test Mode)  |
 
 ---
 
-## 🎯 Conclusion
+## 🎥 Demo Plan
 
-GigSure AI ensures **income protection for gig workers using AI and automation**.
+1. Simulate user work pattern (6–10 PM)
+2. Trigger fake rain event
+3. AI predicts income
+4. System validates working intent
+5. Automatic payout shown
+
+---
+
+## 🚀 Future Enhancements
+
+* Predictive alerts (“Rain expected tomorrow”)
+* Safe zone recommendations
+* Income stability scoring
+* Multi-platform integration (Amazon, Zepto)
+
+---
+
+## 🏁 Conclusion
+
+FlexiCover AI transforms insurance from a **reactive system** to a **predictive, intelligent safety net**.
+
+👉 It ensures gig workers are protected not just from events,
+but from **lost earning opportunities**.
+
+---
+
+## 🎯 One-Line Pitch
+
+**“FlexiCover AI uses behavioral intelligence to automatically protect gig workers from income loss.”**
+
+---
